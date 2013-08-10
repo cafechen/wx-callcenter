@@ -1,0 +1,27 @@
+{
+	"name": "wx-callcenter",
+	"version": "0.0.1",
+	"description": "客服中心的微信渠道",
+	"author": "Shawn Zhu <davidzhu.4.2@gmail.com>",
+	"main": "app.js",
+	"scripts": {
+		"test": "make test",
+		"blanket": { 
+			"pattern": "//^((?!(node_modules|test)).)*$/"
+		}
+	},
+	"dependencies": {
+		"wechat": "0.4.7",
+		"express": "3.x",
+        "mustache": "0.7.2",
+        "consolidate": "*",
+        "express-validator":"*"
+	},
+	"devDependencies": {
+	    "mocha": "*",
+	    "should": "*",
+	    "supertest": "*",
+	    "blanket": "*"
+	}
+
+}
