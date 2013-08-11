@@ -11,11 +11,9 @@
 		}
 	},
 	"dependencies": {
-		"wechat": "0.4.7",
 		"express": "3.x",
         "mustache": "0.7.2",
-        "consolidate": "*",
-        "express-validator":"*"
+        "weixin-robot": "0.4.3"
 	},
 	"devDependencies": {
 	    "mocha": "*",
