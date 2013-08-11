@@ -1,0 +1,28 @@
+---
+hi|你好:
+  - '你好，请输入 help 或问号'
+  - 'still in alpha version. Please input help or question mark'
+
+帮助|help: |
+  建议你试试这几条指令
+  1 福彩双色最新资讯
+  2 最新开奖及历史
+  3 方案推荐
+  help 重看本指令请回复help或问号
+
+1: |
+  福彩双色最新资讯
+  正在进行内容建设，请稍候
+
+
+2: |
+  最新开奖及历史
+  正在进行内容建设，请稍候
+
+
+3: |
+  方案推荐
+  正在进行内容建设，请稍候
+
+
+version: 'alpha'
