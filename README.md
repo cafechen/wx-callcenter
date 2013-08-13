@@ -12,9 +12,9 @@ See file `~/.weixin/config.json`:
 
 	{
 		"port": 4000,
-		"accessKeyId": "<your-access-key-id>",
-		"secretAccessKey": "<your-secret-access-key>",
-		"associateTag": "<your-associate-tag>"
+		"accounts": [
+			{"token":"your-wx-token", "path":"URI that it listens to"}
+		]
 	}
 
 # Usage

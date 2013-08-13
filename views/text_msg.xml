@@ -4,4 +4,5 @@
  <CreateTime>{{created}}</CreateTime>
  <MsgType><![CDATA[text]]></MsgType>
  <Content><![CDATA[{{content}}]]></Content>
+ {{#msgId}}<MsgId>{{msgId}}</MsgId>{{/msgId}}
 </xml>
