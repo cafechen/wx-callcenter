@@ -16,7 +16,8 @@
         "mustache": "0.7.2",
         "weixin-robot": "0.4.3",
         "debug": "~0.7.2",
-    	"js-yaml": "~2.0.3"
+    	"js-yaml": "~2.0.3",
+    	"node-xmpp": "0.5.5"
 	},
 	"devDependencies": {
 	    "mocha": "*",

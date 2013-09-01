@@ -22,20 +22,25 @@ app.set('view engine', 'html');
 
 app.set('views', __dirname + '/views');
 
-app.configure('production', function() {
+app.configure('production', function () {
   app.use(express.logger());
 })
 
 // support one acount
 if(!!config.accounts) {
-	var bot_config = config.accounts[0];
-    
-    webot.watch(app, bot_config);
-    // load rules
-    require('./lib/tck_bot')(webot);
+  var bot_config = config.accounts[0];
+
+  webot.watch(app, bot_config);
+  // load rules
+  require('./lib/tck_bot')(webot);
 }
 
-app.listen(config.port, function(){
+if (!!config.jid) {
+  var xmpp_bot = require('./lib/dispatcher_bot')(config.jid);
+  // TODO create event handler to hook webot and xmpp bot
+}
+
+app.listen(config.port, function () {
   log("Listening on %s", config.port);
 });
 
