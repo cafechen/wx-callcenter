@@ -38,7 +38,7 @@ describe("Client connectivity", function () {
   it("send message", function (done) {
     svcl.once('stanza', function (stanza) {
       stanza.is('message').should.be.true;
-      stanza.attrs.to.should.be("foo@bar.org");
+      stanza.attrs.to.should.eql("foo@bar.org");
       done();
     });
 
