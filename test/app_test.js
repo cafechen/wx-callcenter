@@ -82,5 +82,29 @@ describe('tck_bot.js', function() {
             done();
           })
       })
+
+
+      it('human support', function (done) {
+          var info = {
+            to: 'tester',
+            from: 'bar',
+            type: 'text',
+            content: '有人在吗',
+            created: new Date().getTime()
+          };
+
+          request(app)
+          .post(mock_path + mock_query(mock_token, 'hi'))
+          .send(mock_text(info))
+          .expect(200)
+          .end(function(err, res){
+            if (err) return done(err);
+            var body = res.text.toString();
+            console.log(body);
+
+            body.should.match(/<Content><\!\[CDATA\[alpha\]\]><\/Content>/);
+            done();
+          })
+      })
   })
 })

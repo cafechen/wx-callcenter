@@ -1,6 +1,6 @@
 var should = require('should');
 
-var helper = require('../lib/msg_helpers');
+var helper = require('../lib/msg_helper');
 
 describe('manage messages', function () {
   var mockMsgId = "foo",

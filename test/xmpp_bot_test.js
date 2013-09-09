@@ -20,7 +20,7 @@ describe("Client connectivity", function () {
   });
 
   var cl = new xmpp.Client({
-    jid: 'client1@localhost',
+    jid: 'test1@localhost',
     password: 'test',
     host: '::1',
     port: C2S_PORT
@@ -64,7 +64,8 @@ describe("Connect to letoke.com", function () {
 
   var bot = require('../lib/dispatcher_bot')(jidA);
 
-  it("send message", function () {
+  it("send message", function (done) {
     bot.send(new xmpp.Message({to: jidB.jid}).c('body').t('hi'));
+    done();
   });
 });
