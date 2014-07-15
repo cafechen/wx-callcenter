@@ -17,7 +17,7 @@
         "weixin-robot": "0.4.3",
         "debug": "~0.7.2",
     	"js-yaml": "~2.0.3",
-    	"node-xmpp": "0.5.5",
+    	"node-xmpp": "1.0.0-alpha2",
     	"redis": "0.8.4",
     	"aws-sdk": "1.5.2"
 	},
